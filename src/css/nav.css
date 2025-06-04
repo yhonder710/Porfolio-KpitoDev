@@ -1,0 +1,12 @@
+.navybar {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: var(--bg-body-nav);
+  border-bottom: 1px solid var(--border-color);
+  transition: 300ms;
+}
+
+.iconHome {
+  color: var(--shadow);
+  filter: drop-shadow(0 0 2px var(--shadow));
+}
