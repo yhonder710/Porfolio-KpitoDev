@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import { Navbar } from "./components/organismo/Naybar"
 import { useThemeStore } from "./store/ThemeStore"
-import { useLanguageStore } from "./store/TranslateStore"
 import { Home } from "./components/organismo/Home"
 import { About } from "./components/organismo/About"
 import { Skill } from "./components/organismo/Skill"
@@ -13,7 +12,6 @@ import { Contact } from "./components/organismo/Contact"
 
 function App() {
   const { theme } = useThemeStore()
-  const { language } = useLanguageStore()
 
   useEffect(() => {
     document.body.className = theme
