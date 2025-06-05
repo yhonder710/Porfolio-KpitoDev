@@ -26,7 +26,7 @@ export function CardProject({ img, title, description, tecnologias, linkProject,
         {tecnologias}
       </div>
       <p className="text-center my-4 descripcion">{description}</p>
-      <div className="w-full flex justify-center items-center gap-8">
+      <div className="w-full flex flex-wrap justify-center items-center gap-5">
         <BtnProjectPrimary icon={<MdLanguage />} link={linkProject} text="Web" />
         <BtnProjectSecondary icon={<AiFillGithub />} link={linkGithub} text="Repositorio" />
       </div>
