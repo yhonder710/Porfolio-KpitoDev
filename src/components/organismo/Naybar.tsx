@@ -3,6 +3,7 @@ import { PiProjectorScreenChart } from "react-icons/pi";
 import { LuContact } from "react-icons/lu";
 import { MdOutlineContactMail } from "react-icons/md";
 import { SiHtmx } from "react-icons/si";
+import { FiMenu } from "react-icons/fi";
 
 
 import '../../css/nav.css'
@@ -31,14 +32,17 @@ export function Navbar() {
     <header className="w-full">
       <nav className="w-full h-10 px-5 flex justify-between items-center fixed top-0 navybar">
         <button className="cursor-pointer "><a className="flex items-center justify-center gap-1 text-[24px] font-bold" href="#home">{<SiHtmx size={32} className="iconHome" />} Home</a></button>
-        <ul className="flex gap-6 list-none">
+        <ul className="gap-6 list-none hidden md:flex">
           {link.map(link => (
             <li key={link.name}><a href={`#${link.to}`} className="flex items-center justify-center gap-1 text-[20px] hover:text-[var(--hover)]">{link.icon} {link.name}</a></li>
           ))}
         </ul>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <BtnTheme />
           <BtnLenguage />
+          <span className="flex justify-center items-center md:hidden">
+            <button className="cursor-pointer"><FiMenu size={28} /></button>
+          </span>
         </div>
       </nav>
     </header>

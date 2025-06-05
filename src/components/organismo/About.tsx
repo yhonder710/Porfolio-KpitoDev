@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id='about' className="flex flex-col items-center">
       <h2 className="text-5xl text-[var(--text-secondary)] font-bold mb-5">Sobre Mi</h2>
-      <div className="w-230 text-center text-[20px] flex flex-col justify-center items-center gap-10">
+      <div className="w-full px-8 text-center text-[20px] flex flex-col justify-center items-center gap-10">
         <p className='descripcion'> Desarrollador Full Stack autodidacta con +1 años de experiencia construyendo aplicaciones web escalables y seguras. Especializado en:
           Arquitectura de APIs eficientes REST.
           Gestión de bases de datos relacionales y no relacionales.

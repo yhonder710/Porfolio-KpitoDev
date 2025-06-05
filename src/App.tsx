@@ -7,9 +7,6 @@ import { Skill } from "./components/organismo/Skill"
 import { Projects } from "./components/organismo/Projects"
 import { Contact } from "./components/organismo/Contact"
 
-
-
-
 function App() {
   const { theme } = useThemeStore()
 
