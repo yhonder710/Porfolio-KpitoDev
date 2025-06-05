@@ -11,7 +11,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 
 export function Home() {
   return (
-    <section id='home' className="w-full flex flex-col justify-center items-center h-[95vh]   ">
+    <section id='home' className="w-full flex flex-col justify-center mt-5 sm:mt-0 items-center h-[95vh]   ">
       <section className="text-center ">
         <h1 className="text-6xl md:text-8xl mb-5 titleName">Yhonder Aguero</h1>
         <strong className="text-2xl md:text-3xl text-[var(--text-secondary)]">Desarrollador Full-Stack</strong>

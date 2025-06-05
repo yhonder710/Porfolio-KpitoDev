@@ -14,7 +14,7 @@ export function Projects() {
   return (
     <section id='projects' className="flex flex-col items-center mt-10 mb-5 w-full bg-[var(--bg-projects)] py-3 pb-8 projects">
       <h2 className="text-5xl text-white font-bold mb-5">Projects</h2>
-      <div className="w-full flex flex-wrap items-center justify-center p-10 md:p-0 gap-10">
+      <div className="w-full md:w-220 flex flex-wrap items-center justify-center p-10 md:p-0 gap-10">
         <CardProject
           img={movieApp}
           title="Movie App"
