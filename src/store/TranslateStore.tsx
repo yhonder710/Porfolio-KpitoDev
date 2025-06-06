@@ -20,6 +20,10 @@ interface Idioma {
   cardTitleLearning: string
   cardTitleTool: string
 
+  contactLinkendin: string
+  contactGit: string
+  contactCv: string
+
   descripcion1: string
   descripcion2: string
   descripcion3: string
