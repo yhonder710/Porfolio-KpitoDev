@@ -1,22 +1,8 @@
-import { IoAccessibility } from "react-icons/io5";
-import { PiProjectorScreenChart } from "react-icons/pi";
-import { LuContact } from "react-icons/lu";
-import { MdOutlineContactMail } from "react-icons/md";
-import type { ReactNode } from "react";
+import { useLink } from "./Link"
 
-interface LinkType {
-  name: string
-  to: string
-  icon: ReactNode
-}
 
 export function MenuNaybar() {
-  const link: LinkType[] = [
-    { name: "About", to: "about", icon: <LuContact size={26} /> },
-    { name: "Skill", to: "skill", icon: <IoAccessibility size={26} /> },
-    { name: "Projects", to: "projects", icon: <PiProjectorScreenChart size={26} /> },
-    { name: "Contact", to: "contact", icon: <MdOutlineContactMail size={26} /> }
-  ]
+  const { link } = useLink()
 
   return (
     <ul className="gap-6 list-none hidden md:flex">

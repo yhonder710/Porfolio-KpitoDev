@@ -9,11 +9,14 @@ import { FaReact } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { BiLogoTypescript } from "react-icons/bi";
+import { useLanguageStore } from "../../store/TranslateStore";
 
 export function Projects() {
+  const { language } = useLanguageStore()
+
   return (
     <section id='projects' className="flex flex-col items-center mt-10 mb-5 w-full bg-[var(--bg-projects)] py-3 pb-8 projects">
-      <h2 className="text-5xl text-white font-bold mb-5">Projects</h2>
+      <h2 className="text-5xl text-white font-bold mb-5">{language.language === "es" ? language.tituloProjects : language.tituloProjects}</h2>
       <div className="w-full md:w-220 flex flex-wrap items-center justify-center p-10 md:p-0 gap-10">
         <CardProject
           img={movieApp}

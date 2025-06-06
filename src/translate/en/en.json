@@ -1,4 +1,19 @@
 {
   "language": "en",
-  "titulo": "The Persa"
+  "tituloHome": "Developer Full-Stack",
+  "tituloAbout": "About",
+  "tituloSkill": "Skill",
+  "tituloProjects": "Projects",
+  "tituloContact": "Contact",
+  "subTituloAbout": "Strong skills",
+  "descripcionHome": "I have an expense in the element and implementation of efficient and high performance APIS. Although my director approach is in the Back-End, a key concept of Front-End, which gives me an integral perspective in the development of the web.",
+  "descripcionAbout": "Self -taught Full Stack developer with +1 years of experience by building scalable and safe web applications. Specialized in: efficient APIS architecture Rest. Relational and non -relational database management. Development of dynamic interfaces with React. Responsive designs focused on creating intuitive, rapid and visually impressive web applications. Objective: Create technical solutions that combine performance, usability and scalability.",
+  "descripcion1": "✔ Experience in Full Stack Development with a focus on performance and safety.",
+  "descripcion2": "✔ Ability to integrate external APIS.",
+  "descripcion3": "✔ Optimization of databases for quick and efficient consultations.",
+  "descripcion4": "✔ Agile methodologies for fast and quality deliveries.",
+  "descripcion5": "✔ Not only do I write code, but I build fast, accessible and attractive digital experiences that users love.",
+  "btnDescarga": "Download my CV",
+  "cardTitleLearning": "Learning",
+  "cardTitleTool": "Tool"
 }

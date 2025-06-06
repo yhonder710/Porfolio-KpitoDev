@@ -5,12 +5,15 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaSquareGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
+import { useLanguageStore } from "../../store/TranslateStore";
 
 
 export function Contact() {
+  const { language } = useLanguageStore()
+
   return (
     <section id='contact' className="flex flex-col items-center mt-10 py-5 mb-5">
-      <h2 className="text-5xl text-[var(--text-secondary)] font-bold mb-10">Contact</h2>
+      <h2 className="text-5xl text-[var(--text-secondary)] font-bold mb-10">{language.language === "es" ? language.tituloContact : language.tituloContact}</h2>
       <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-8 md:gap-15">
         <img className="rounded-[50%] h-[180px] imgPerfil" src={imgPerfil} width={180} alt="foto de perfil" />
         <div>

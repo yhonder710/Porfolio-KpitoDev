@@ -1,4 +1,19 @@
 {
   "language": "es",
-  "titulo": "el persa"
+  "tituloHome": "Desarrollador Full-Stack",
+  "tituloAbout": "Sobre mi",
+  "tituloSkill": "Habilidades",
+  "tituloProjects": "Proyecto",
+  "tituloContact": "Contacto",
+  "subTituloAbout": "Habilidades Fuertes",
+  "descripcionHome": "Poseo experiencia en el diseño e implementación de APIs eficientes y de alto rendimiento. Aunque mi enfoque principal está en el back-end, domino conceptos clave de front-end, lo que me brinda una perspectiva integral en el desarrollo de aplicaciones web.",
+  "descripcionAbout": "Desarrollador Full Stack autodidacta con +1 años de experiencia construyendo aplicaciones web escalables y seguras. Especializado en: Arquitectura de APIs eficientes REST. Gestión de bases de datos relacionales y no relacionales. Desarrollo de interfaces dinámicas con React. Diseños responsivos enfocado en crear aplicaciones web intuitivas, rápidas y visualmente impactantes. Objetivo: Crear soluciones técnicas que combinen rendimiento, usabilidad y escalabilidad.",
+  "descripcion1": "✔ Experiencia en desarrollo Full Stack con enfoque en rendimiento y seguridad.",
+  "descripcion2": "✔ Capacidad para integrar APIs externas.",
+  "descripcion3": "✔ Optimización de bases de datos para consultas rápidas y eficientes.",
+  "descripcion4": "✔ Metodologías ágiles para entregas rápidas y de calidad.",
+  "descripcion5": "✔ No solo escribo código, sino que construyo experiencias digitales rápidas, accesibles y atractivas que los usuarios aman.",
+  "btnDescarga": "Descarga mi CV",
+  "cardTitleLearning": "Aprendiendo",
+  "cardTitleTool": "Herramientas"
 }

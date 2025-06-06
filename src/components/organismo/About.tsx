@@ -1,20 +1,17 @@
 import imgClaro from '../../../public/img-claro.jpg'
 import imgOscuro from '../../../public/img-oscuro.jpg'
 import { useThemeStore } from '../../store/ThemeStore'
+import { useLanguageStore } from '../../store/TranslateStore'
 
 export function About() {
   const { theme } = useThemeStore()
+  const { language } = useLanguageStore()
 
   return (
     <section id='about' className="flex flex-col items-center">
-      <h2 className="text-5xl text-[var(--text-secondary)] font-bold mb-5">Sobre Mi</h2>
+      <h2 className="text-5xl text-[var(--text-secondary)] font-bold mb-5">{language.language === "es" ? language.tituloAbout : language.tituloAbout}</h2>
       <div className="w-full md:w-220 px-8 text-center text-[20px] flex flex-col justify-center items-center gap-10">
-        <p className='descripcion'> Desarrollador Full Stack autodidacta con +1 años de experiencia construyendo aplicaciones web escalables y seguras. Especializado en:
-          Arquitectura de APIs eficientes REST.
-          Gestión de bases de datos relacionales y no relacionales.
-          Desarrollo de interfaces dinámicas con React.
-          Diseños responsivos enfocado en crear aplicaciones web intuitivas, rápidas y visualmente impactantes.
-          Objetivo: Crear soluciones técnicas que combinen rendimiento, usabilidad y escalabilidad.</p>
+        <p className='descripcion'>{language.language === "es" ? language.descripcionAbout : language.descripcionAbout}</p>
 
         {
           theme === 'dark'
@@ -24,21 +21,21 @@ export function About() {
 
 
         <div className='flex flex-col gap-2'>
-          <strong className='text-3xl text-[var(--text-secondary)] font-bold'>Habilidades Fuertes</strong>
+          <strong className='text-3xl text-[var(--text-secondary)] font-bold'>{language.language === "es" ? language.subTituloAbout : language.subTituloAbout}</strong>
           <span>
-            ✔ Experiencia en desarrollo Full Stack con enfoque en rendimiento y seguridad.
+            {language.language === "es" ? language.descripcion1 : language.descripcion1}
           </span>
           <span>
-            ✔ Capacidad para integrar APIs externas.
+            {language.language === "es" ? language.descripcion2 : language.descripcion2}
           </span>
           <span>
-            ✔ Optimización de bases de datos para consultas rápidas y eficientes.
+            {language.language === "es" ? language.descripcion3 : language.descripcion3}
           </span>
           <span>
-            ✔ Metodologías ágiles para entregas rápidas y de calidad.
+            {language.language === "es" ? language.descripcion4 : language.descripcion4}
           </span>
           <span>
-            ✔ No solo escribo código, sino que construyo experiencias digitales rápidas, accesibles y atractivas que los usuarios aman.
+            {language.language === "es" ? language.descripcion5 : language.descripcion5}
           </span>
         </div>
       </div>
