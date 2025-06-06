@@ -9,7 +9,7 @@ export function BtnTheme() {
 
   const classBtnTheme = theme === "dark" ? "btnTheme on" : "btnTheme"
   return (
-    <button className={`${classBtnTheme} py-1`} onClick={changeTheme}>
+    <button type="button" aria-label="cambiar modo oscuro o claro" className={`${classBtnTheme} py-1`} onClick={changeTheme}>
       {theme === "dark" ? <FaSun /> : <FaMoon />}
     </button>
   )
